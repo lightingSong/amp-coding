@@ -1,4 +1,4 @@
-# coding-tes
+# coding-test
 
 ## inside myapp/public folder, install all front end dependencies
 
