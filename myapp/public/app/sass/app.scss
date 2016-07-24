@@ -1,0 +1,40 @@
+@import 'variables';
+@import 'mixins';
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+  .container {
+    margin: 0 auto;
+    padding: 1em;
+    @media (min-width: $break-small) {
+      width: $container-sm;
+    }
+    @media (min-width: $break-large) {
+      width: $container-lg;
+    }
+  }
+  input[type="text"]{
+    @include border($border-radius);
+    height: 3em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.25em 0.75em;
+  }
+  .search{
+    padding: 1em 0;
+    h2 {
+      font-size: $font-size-base * 2;
+      font-weight: normal;
+    }
+  }
+  .people {
+    padding: 0;
+    .person {
+      @include col(1,3);
+      text-align:center;
+      padding: 0.25em;
+    }
+  }
+
+}

@@ -1,0 +1,21 @@
+<div class="container">
+    <div>
+        <div class="search">
+            <!--Heading content-->
+            <h2>People Search</h2>
+            <input type="text" ng-model="$ctrl.keyword" ng-change="$ctrl.search()" aria-label="people search" placeholder="enter your search term"/>
+
+        </div>
+        <div>
+            <!--Body content-->
+
+            <ul class="people">
+                <li ng-repeat="person in $ctrl.people" class="person">
+                    <img src="img/{{person.name}}.png" alt="{{person.name + '\'s avatar'}}"/><br/>
+                    <span>{{person.name}}</span>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+</div>

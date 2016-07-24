@@ -1,0 +1,44 @@
+/*font and color*/
+/*media query*/
+/*font and color*/
+/*media query*/
+body {
+  font: 100% "Source Sans Pro", "Lucida Grande", sans-serif;
+  color: #64accb; }
+  body .container {
+    margin: 0 auto;
+    padding: 1em; }
+    @media (min-width: 768px) {
+      body .container {
+        width: 750px; } }
+    @media (min-width: 1200px) {
+      body .container {
+        width: 1170px; } }
+  body input[type="text"] {
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background-clip: padding-box;
+    border: 1px #000000 solid;
+    height: 3em;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.25em 0.75em; }
+  body .search {
+    padding: 1em 0; }
+    body .search h2 {
+      font-size: 28px;
+      font-weight: normal; }
+  body .people {
+    padding: 0; }
+    body .people .person {
+      width: 100%;
+      display: inline-block;
+      box-sizing: border-box;
+      padding-left: 1em;
+      padding-right: 1em;
+      text-align: center;
+      padding: 0.25em; }
+      @media only screen and (min-width: 768px) {
+        body .people .person {
+          width: 33.33333%;
+          vertical-align: top; } }
